@@ -36,7 +36,6 @@
 		
 		<title>1Lang</title>
 	  </head>
-navigation
 <body data-spy="scroll" data-target="navbarResponsive">
 
 
@@ -46,8 +45,8 @@ navigation
 	<div id="home">
 
 	 	<!-- Start of the navigation-->
-		 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#"><img src="images/homepage.png"></a>
+		 <nav class="navbar navbar-expand-md navbar-dark shadow-5-strong fixed-top">
+			<a class="navbar-brand" href="#"><img src="images/coding.png"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -55,16 +54,19 @@ navigation
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#home">About</a>
+						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#plans">Plans</a>
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#features">Plans</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#reviews">Reviews</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contactus">Contacts</a>
+						<a class="nav-link" href="#contacts">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -85,15 +87,11 @@ navigation
 		</div>
 
 		<div class="caption text-center">
-			<a class="btn btn-red btn-lg trial">MORE</a> <br>
-			<a class="btn btn-red btn-lg trial">FREE TRIAL LESSON</a>
+			<a class="btn btn-floating btn-secondary trial">MORE</a> <br>
+			<a class="btn btn-rounded btn-secondary trial">FREE TRIAL LESSON</a>
 		</div>
-		
 
-
-
-
-		<!-- Start the landing page section-->
+		<!-- End the landing page section-->
 
 
 	</div>
@@ -101,34 +99,68 @@ navigation
 	<!-- End the Home section -->
 
 
+	<!-- Start the about section-->
 
+	<!-- <div id="about" class="offset">
+		<div class="col-12 narrow text-center">
+			<h1 class="motto">Connecting you to the English Speaking World</h1>
+		</div>
+	</div>
+	 -->
 
-
+	<!-- End the about section-->
 
 
 
 	<!-- Start the Plans section -->
 
-	<div id="plans" class="offset">
+	<div id="features" class="offset">
+		
+		<!--Start of the Jumbostron-->
+		 
+		<div class="jumbotron">
+			<div class="narrow text-center">
+				<div class="col-12">
+					<h3 class="heading">Features</h3>
+					<div class="heading-underline"></div>
+				</div>
 
+				<!-- Start of the row-->
+				<div class="row text-center">
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3 up-5"></i>
+							<h3>Custom Animation</h3>
+							<p>The animation for bootstrap is very awesome. You should try it out</p>
+						</div>
+					</div>
+				
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="fas fa-sliders-h fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
+							<h3>Content Slider</h3>
+							<p>We use the content slider for different uses among them is filtering</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="feature">
+							<i class="fas fa-bold fa-4x" data-fa-transform="shrink-3 up-5"></i>
+							<h3>Contact Form</h3>
+							<p>We use the contact form when you want to get certain information from website visitors</p>
+						</div>
+					</div>
+				</div>
+				<!-- End of the row-->
+
+			</div>
+		</div>
+
+
+		<!--End of the Jumbostron-->
 	</div>
 
-	<!-- End the Plans section -->
-
-
-
-
-
-
-
-
-	<!-- Start the Reviews section -->
-
-	<div id="reviews" class="offset">
-
-	</div>
-
-	<!--  End the Reviews section -->
+	<!--  End the Plans section -->
 
 
 
@@ -138,16 +170,159 @@ navigation
 
 
 
-	<!-- Start the Contact Us section -->
+	<!-- Start the Resources section -->
 
 	<div id="contactus" class="offset">
 
+		<!--start of the fixed background-->
+		<div class="fixed-background">
+			<div class="row dark text-center">
+
+				<div class="col-12">
+					<h3 class="heading">Build With Care</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+
+				<div class="col-md-4">
+					<h3>HTML 5</h3>
+					<div class="feature">
+						<i class="fas fa-code fa-3x"></i>
+					</div>
+					<p>Built with the latest HTML</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3>BOOTSTRAP-4</h3>
+					<div class="feature">
+						<i class="fas fa-bold fa-3x"></i>
+					</div>
+					<p>Built with the latest BOOTSTRAP-4</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3>CSS 3</h3>
+					<div class="feature">
+						<i class="fab fa-css3 fa-3x"></i>
+					</div>
+					<p>Built with the latest CSS 3</p>
+				</div>
+	
+			</div>
+
+			<div class="fixed-wrap">
+				<div class="fixed">
+
+				</div>
+
+			</div>
+		</div>
+		<!--start of the fixed background-->
+
 	</div>
 
-	<!-- End the Contact Us section -->
+	<!-- End the Resources section -->
+
+
 
 	
 
+
+	<!-- Start the Clients section -->
+
+
+		<!--start jumbotron-->
+
+		<div class="jumboron text-center offset" id="clients">
+			<div class="col-12 clients-background">
+				<h3 class="heading">Clients</h3>
+				<div class="heading-underline"></div>
+			</div>
+	
+			<div class="row">
+				<div class="col-md-6 clients">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/profile_five.png">
+						</div>
+						<div class="col-md-8">
+							<blockquote>
+								<i class="fas fa-quote-left"></i>
+								Ever since I came across this website, I have managed to learn a lot, 
+								from the basics to the most advanced topics that one can ever come across 
+								in Web development. Thank you very much to the mastermind behind this huge platform.
+								It has helped me a lot.
+								<hr class="client-hr">
+								<cite>&#8212; Francis, Clinical Officer</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-md-6 clients">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="images/profile_four.png">
+						</div>
+						<div class="col-md-8">
+							<blockquote>
+								<i class="fas fa-quote-left"></i>
+								Ever since I came across this website, I have managed to learn a lot, 
+								from the basics to the most advanced topics that one can ever come across 
+								in Web development. Thank you very much to the mastermind behind this huge platform.
+								It has helped me a lot.
+								<hr class="client-hr">
+								<cite>&#8212; Moses, Mechanical Engineer</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+
+			<div class="col-12 narrow text-center course-padding">
+				<p class="lead">Do you want to learn more about developing wonderful and beautiful websites?</p>
+				<a class="btn btn-secondary btn-sm trial">COURSE</a>
+			</div>
+
+		</div>
+	
+		<!--end jumbotron-->
+
+
+
+	<!-- End the Clients section -->
+
+
+
+
+
+
+
+
+	<!-- Start the contact section -->
+
+		<footer>
+			<div class="row justify-content-center offset">
+				<div class="col-md-5 text-center">
+					<img class="logo" src="images/coding.png">
+					<p>We endevor to provices the best courses to your taht will help and intoroduce you
+						to the world of web development. You can contact us if you'd like to find out more
+						about us and our course. We would be glad to help you achive your dreams
+					</p>
+					<strong>Contact Info</strong>
+					<p>(777) 666-6666 <br> developers@mail.com</p>
+					<a href="https://www.facebook.com/Petermwansa1st/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://twitter.com/peter__m__m" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/peter_m_m/" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>
+
+				<hr class="socket">
+				&copy; Rockie Theme.
+			</div>
+		</footer>
+
+	<!-- End the contact section -->
 
 
 <!--- Script Source Files -->
@@ -162,7 +337,7 @@ navigation
 
 
 
-<!--- Check out my courses! -->
+<!-- - Check out my courses!
 <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;">
 	<a href="https://w3newbie.com/courses" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-course-banner.png" style="max-width: 100%; min-width: 100%;"></a>
-</div>
+</div> -->
