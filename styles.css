@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: black;
 }
 
@@ -19,25 +19,36 @@ body {
 
 }
 
+p,h3 {
+  font-weight: 10;
+}
+
+.buttons-padding {
+  padding-left: 2rem;
+}
+
 
 
 /*navigation*/
 
 .navbar{
   /* text-transform: uppercase; */
+  background-color: #0D1191;
   font-weight: 700;
   font-size: 1.4rem;
   word-spacing: 0.9rem;
   position: fixed;
   top: 0px;
-  left: 10%;
+  /* left: 10%; */
+  
 }
 
 .navbar-brand img {
   position: relative;
-  height: 5rem;
+  height: 3rem;
   bottom: 20%;
-  border-radius: 100%;
+  left: 10%;
+  padding: 0rem 2rem;
 }
 
 .logo {
@@ -47,6 +58,8 @@ body {
 
 .navbar-nav li {
   padding-right: 0.7rem;
+  font-weight: 100;
+  font-size: medium;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -56,7 +69,12 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1EBBA3;
+  color: #B80000;
+}
+
+.telegram {
+  position: absolute;
+  right: 4%;
 }
 
 
@@ -64,7 +82,7 @@ body {
 /* Landing page */
 
 .home-inner {
-  background-image: url(images/prog.png);
+  background-image: url(images/homepage.png);
 }
 
 .caption {
@@ -77,14 +95,16 @@ body {
   font-size: 6rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0.1rem 0.1rem .8rem #1EBBA3;
+  text-shadow: 0.1rem 0.1rem .8rem #0D1191;
 }
 
 .trial {
+
   color: white;
   font-size: 2.8rem;
-  background-color: #1EBBA3;
+  background-color: #B80000;
   text-shadow: 0.1rem 0.1rem .8rem black;
+
 }
 .trial:hover {
   color: white;
@@ -92,15 +112,36 @@ body {
   text-shadow: 0.1rem 0.1rem .8rem black;
 }
 
-.btn-lg {
-  border-width: small;
-  border-radius: 50px;
+
+.upper {
+  position: absolute;
+  left: auto;
 }
 
-.btn-sm {
-  border-width: medium;
-  border-radius: 50px;
+
+
+/*accordion*/
+
+#accordion {
+  position: relative;
+  margin: 2rem 4rem 4rem;
 }
+
+.faqs {
+  position: relative;
+  margin: 4rem 2rem 2rem 2rem;
+}
+
+.accordion-header {
+  background-color: #ffffff;
+  color: black;
+}
+
+
+.padding-card {
+  padding: 1rem 0rem 2rem 0rem;
+}
+
 
 .course-padding {
   margin-top: 300px;
@@ -108,9 +149,35 @@ body {
 }
 
 .motto {
-  color: #1EBBA3;
+  color: #0D1191;
   font-weight: bold;
+  padding-bottom: 9rem;
 }
+
+/*About section*/
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  padding: 2rem
+}
+
+/*card section*/
+
+
+.card-header {
+  background-color: #0D1191;
+
+}
+
+.card-button:hover {
+  background-color: #0D1191;
+}
+
+.plan-type {
+  padding-top: 2rem;
+}
+
 
 
 /* .clients-background {
@@ -128,20 +195,16 @@ body {
     font-size: 2.4rem;
   }
 .btn-secondary {
-  border-width: medium;
-  border-radius: 50px;
   padding: .6rem 1.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
+  background-color: #B80000;
   color: white;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  border-color: #189582;
-  background-color: #189582;
+  background-color: #0D1191;
   color: white;
 }
 
@@ -164,12 +227,12 @@ h3.heading {
 .heading-underline {
   width: 3rem;
   height: .2rem;
-  background-color: #1EBBA3;
+  background-color: #0D1191;
   margin: 0 auto 2rem;
 }
 
 .feature svg.svg-inline--fa {
-  color: #1EBBA3;
+  color: #0D1191;
 }
 
 .feature h3 {
@@ -186,11 +249,24 @@ h3.heading {
 
 
 
+
 /* this is the resources section  */
 
 
-.fixed {
-  background-image: url(images/prog_two.png);
+.fixed-home {
+  background-image: url(images/learn.png);
+  z-index: -1;
+}
+.fixed-kids {
+  background-image: url(images/practical.png);
+  z-index: -1;
+}
+.fixed-adults {
+  background-image: url(images/learn.png);
+  z-index: -1;
+}
+.fixed-groups {
+  background-image: url(images/groups.png);
   z-index: -1;
 }
 
@@ -222,15 +298,18 @@ h3.heading {
 }
 
 blockquote .svg-inline--fa {
-  color: #1EBBA3;
+  color: #0D1191;
   margin: 1rem;
 }
 
 .client-hr {
-  border-top: .1rem solid #1EBBA3;
+  border-top: .1rem solid #0D1191;
 }
 
-
+.lesson {
+  background-color: #B80000;
+  margin: 9rem;
+}
 
 
 
@@ -238,10 +317,12 @@ blockquote .svg-inline--fa {
 /* this is the contacts section  */
 
 footer {
-  background-color: #06221e;
+  background-color: #0D1191;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   color: white;
-  padding: 2rem 0 2rem;
-  margin-top: 1rem;
+  padding: 4rem 0 1rem;
 }
 
 footer img {
@@ -259,14 +340,16 @@ footer svg.svg-inline--fa {
 }
 
 footer svg.svg-inline--fa:hover {
-  color: #1EBBA3 !important 
+  color: #0D1191 !important 
 }
 
 hr.socket {
   width: 100%;
-  border-top: .2rem solid #1EBBA3;
+  border-top: .2rem solid #ffffff;
   margin-top: 3rem;
 }
+
+
 
 
 
@@ -287,12 +370,15 @@ hr.socket {
     text-transform: uppercase;
 }
   
+
 .trial {
+    border-radius: 50px;
     color: white;
     font-size: 1.6rem;
-    background-color: #1EBBA3;
+    background-color: #B80000;
 }
 .trial:hover {
+  border-radius: 50px;
     color: white;
     background-color: black;
 }
