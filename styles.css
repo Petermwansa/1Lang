@@ -27,6 +27,9 @@ p,h3 {
   padding-left: 2rem;
 }
 
+a {
+  padding: 0.7rem 0rem;
+}
 
 
 /*navigation*/
@@ -129,7 +132,7 @@ p,h3 {
 
 .faqs {
   position: relative;
-  margin: 4rem 2rem 2rem 2rem;
+  margin: 1rem 2rem 2rem 2rem;
 }
 
 .accordion-header {
@@ -267,6 +270,10 @@ h3.heading {
 }
 .fixed-groups {
   background-image: url(images/groups.png);
+  z-index: -1;
+}
+.fixed-faqs {
+  background-image: url(images/faqs.png);
   z-index: -1;
 }
 
