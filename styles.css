@@ -29,6 +29,15 @@ p,h3 {
 
 a {
   padding: 0.7rem 0rem;
+  text-decoration: none;
+}
+
+.hyper:hover {
+  color: #B80000;
+}
+
+.icon:hover {
+  color: black;
 }
 
 
